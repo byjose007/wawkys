@@ -1,0 +1,54 @@
+.hero-content{
+    text-align: center;
+}
+
+.brand img{
+    padding-top: 30px;
+    width: 50%;
+    height: 50%;
+}
+
+.cta-section{
+    padding-top: 30px;
+}
+
+
+.cta-content-wrapper{
+    color: white;
+}
+
+form{
+
+
+background: red;
+border-radius: 35px 37px 132px 81px;
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+
+}
+
+form label{
+    color:  white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.btn-registro{
+    background-color: #333;
+    color: white;
+    width: 205px;
+    height: 60px;
+}
+
+a.registrarme,  .about-btn{
+    color: red;
+}
+
+
+
+.feature-widget .content h5{
+    font-size: 21px;
+}
