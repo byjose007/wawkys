@@ -24,11 +24,16 @@ export class ListarComponent implements OnInit {
     });
 
      
-  const data = [{ foo: 'foo'}, { bar: 'bar' }]
+  
+  }
+
+  descargar(){
+    const data =     this.registros
   const fileName = 'download'
   const exportType = 'csv'
   
   exportFromJSON({ data, fileName, exportType })
+
   }
 
 }
