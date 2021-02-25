@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RegistroService } from '../registro.service';
+import exportFromJSON from 'export-from-json'
 
 @Component({
   selector: 'app-listar',
@@ -21,6 +22,13 @@ export class ListarComponent implements OnInit {
       
 
     });
+
+     
+  const data = [{ foo: 'foo'}, { bar: 'bar' }]
+  const fileName = 'download'
+  const exportType = 'csv'
+  
+  exportFromJSON({ data, fileName, exportType })
   }
 
 }
