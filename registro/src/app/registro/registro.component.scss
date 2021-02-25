@@ -1,9 +1,12 @@
+
+
 .hero-content{
     text-align: center;
 }
 
 .brand img{
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
     width: 50%;
     height: 50%;
 }
@@ -20,8 +23,8 @@
 form{
 
 
-background: red;
-border-radius: 35px 37px 132px 81px;
+background: #333;
+border-radius: 35px 35px 132px 81px;
 padding: 20px;
 display: flex;
 flex-wrap: wrap;
@@ -37,7 +40,7 @@ form label{
 }
 
 .btn-registro{
-    background-color: #333;
+    background-color: red;
     color: white;
     width: 205px;
     height: 60px;
@@ -51,4 +54,26 @@ a.registrarme,  .about-btn{
 
 .feature-widget .content h5{
     font-size: 21px;
+}
+
+.titulo-principal{
+    color: red;
+}
+
+
+h2, p{
+    color: whitesmoke;
+}
+
+.about-shape.shape img {
+    width: 59vw;
+    height: 93vh;
+}
+
+.btn-hero{
+ background-color: red !important;
+}
+
+header.site-header {
+    border-radius: 0 0 176px 176px;
 }

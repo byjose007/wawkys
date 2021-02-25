@@ -3,7 +3,7 @@
     Header Area
 //////////////////////////// */
 .site-header {
-  background-color: #14ee80;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -336,11 +336,14 @@
 //////////////////////////// */
 .hero-area {
   padding-bottom: 80px;
-  background-image: url(../image/hero-bg.png);
+  /* background-image: url(../image/hero-bg.png); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-color: #000;
+  color: whitesmoke;
+  border-radius: 35px 37px 132px 81px;
 }
 
 @media (min-width: 768px) {

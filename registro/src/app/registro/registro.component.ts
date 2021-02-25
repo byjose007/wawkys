@@ -14,6 +14,7 @@ export class RegistroComponent implements OnInit {
   nombres = '';
   correo = '';
   telefono = '';
+  pais = ''
   constructor(private registroService: RegistroService, private toastr: ToastrService) { }
 
 
@@ -22,7 +23,8 @@ export class RegistroComponent implements OnInit {
     let data = {
       nombres: this.nombres,
       correo: this.correo,
-      telefono: this.telefono
+      telefono: this.telefono,
+      pais: this.pais
 
     }
 
@@ -33,6 +35,7 @@ export class RegistroComponent implements OnInit {
      this.nombres = '';
      this.correo = '';
       this.telefono = '';
+      this.pais = '';
 
     });
 
@@ -48,6 +51,19 @@ export class RegistroComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
+    this.registroService.getIp().subscribe((data:any) =>{
+      console.log(data, 'ip');
+
+      this.registroService.getGEOLocation(data.ip).subscribe((pais:any) =>{
+        console.log(pais, "pais");
+
+        this.pais = pais.country_name;
+        
+      })
+      
+    })
   }
 
 }
